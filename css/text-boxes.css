@@ -1,0 +1,73 @@
+.text-boxes {
+    background-image: linear-gradient(to right, #211b19 , #4e3427);
+} 
+
+.in-text-boxes{
+    font-family: "Myriad Pro";
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.in-text-boxes h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.in-text-boxes h2 span {
+    color: rgb(199, 178, 153);
+}
+
+.in-text-boxes p {
+    font-size: 18px;
+    color: rgb(97, 88, 85);
+    padding-top: 10px;
+}
+.button {
+    height: 35px;
+    width: 100px;
+    margin-top: 30px;
+    font-size: 8px;
+}
+@media (min-width: 568px)
+{   
+    .button {
+        height: 35px;
+        width: 115px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    .in-text-boxes{
+        padding: 20px 20px;
+    }
+
+}
+
+@media (min-width:992px){
+    .in-text-boxes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .button {
+        height: 50px;
+        width: 170px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .in-text-boxes h2 {
+        text-align: left;
+    }
+
+    .in-text-boxes p {
+        text-align: left;
+        padding: 0;
+    }
+
+}
+

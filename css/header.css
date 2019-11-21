@@ -1,0 +1,143 @@
+header {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding:  20px;
+    padding-top: 30px;
+}
+
+.logo img {
+        max-width: 85%;
+    }
+
+.waxom {
+    color: #ffffff;
+    line-height: 1.2;
+    padding-right: 20px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    border-radius: 3px;
+ }
+nav{
+    display: none;
+}
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: center;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #ffffff;
+}
+
+.menu li a:hover {
+    color: #c7b29b;
+}
+
+.serching {
+    display: none;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.serching div {
+    padding: 0 15px;
+}
+
+@media (min-width: 568px) {
+    .logo {
+        padding: 25px;
+        padding-top: 30px;
+    }
+    .logo img {
+        max-width: 100%;
+    }
+    .waxom {
+        font-size: 30px;
+    }
+    .hamburger span {
+        display: block;
+        width: 45px;
+        height: 5px;
+    }
+}
+
+@media (min-width:992px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding: 30px 20px;
+    }       
+    .about-us {
+        min-width: 68px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .waxom {
+        font-size: 35px;
+    }
+    .serching {
+        display: flex;
+        margin: 0;
+    }
+    ul.menu {
+        margin-top: 0;
+    }
+}
+@media (min-width:1200px) {
+    .header {
+        margin-top: 35px;
+    } 
+    .waxom {
+        font-size: 34px;
+    }
+}

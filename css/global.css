@@ -1,14 +1,20 @@
 html,
 body {
     width: 100%;
+    height: auto;
 }
 
 body { 
     color: #6b6b6b;
-    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 12px;
     overflow: auto;
 }
+
+.hidden {
+    display: none !important;
+}
+
 * {
    box-sizing: border-box;
 }
@@ -18,10 +24,42 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+button {
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.643;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    background-color: #998675;
+    box-shadow: inset 0px -3px 0px 0px rgba(115, 99, 87, 1.004);
+    height: 45px;
+    width: 115px;
+    margin-top: 45px;
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        max-width: 1200px;
+    }
 }

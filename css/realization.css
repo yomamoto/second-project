@@ -1,0 +1,82 @@
+.realization {
+    background-color: #fbfaf8;
+}
+
+.in-realization {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: "Myriad Pro";
+}
+
+.in-realization h2{
+    font-size: 25px;
+    color: rgb(85, 85, 85);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.service-fix-width {
+    margin: 0 auto;
+}
+
+.in-realization p{
+    font-size: 15px;
+    color: rgb(140, 140, 140);
+    line-height: 1.4;
+}
+
+.in-realization img {
+    margin-top: 30px;
+}
+
+.browse {
+    text-align: center;
+    height: 600px;
+}
+@media (min-width:992px) {
+    .in-realization {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .in-realization h2{
+         font-size: 30px;
+         width: 770px;
+    }
+    .in-realization p {
+         font-size: 16px;
+         line-height: 1.75;
+         width: 770px;
+    }
+    .browse {
+        position: relative;
+    }
+    .browser-left {
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        bottom: 0;
+    }
+    .browser-right {
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        bottom: 0;
+    }
+    .browser-center {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        left: calc(50% - 385px);
+    }
+}
+@media (min-width:1200px) {
+    .browser-right {
+        right: 0;
+    }
+    .browser-right {
+        right: 0;
+    }
+}
+
