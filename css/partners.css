@@ -1,0 +1,55 @@
+.partners-image {
+    background-image: url("../pict/parnters--foto-font.png");
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.partners-bland-mode {
+    background-color: rgba(17, 17, 17, 0.7);
+    width: 100%;
+    height: 400px;
+}
+
+.partner-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    width: 100%;
+    height: 400px;
+}
+
+.partner-content div {
+    width: calc(50% - 20px);
+    text-align: center;
+}
+
+.partner-content div img {
+    width: 100px;
+}
+
+@media (min-width: 568px) {
+    .partner-content {
+        justify-content: center;
+        height: 500px;
+    }
+    .partner-content div {
+        width: 25%;
+    }
+    .partners-bland-mode {
+        height: 500px;
+    }
+    .partners-image {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .partner-content div img {
+        width: 80%;
+    }
+}

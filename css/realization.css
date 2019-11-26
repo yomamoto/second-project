@@ -7,7 +7,6 @@
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    font-family: "Myriad Pro";
 }
 
 .in-realization h2{
@@ -32,7 +31,6 @@
 
 .browse {
     text-align: center;
-    height: 600px;
 }
 @media (min-width:992px) {
     .in-realization {
@@ -51,6 +49,7 @@
     }
     .browse {
         position: relative;
+        height: 600px;
     }
     .browser-left {
         position: absolute;

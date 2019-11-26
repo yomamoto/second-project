@@ -19,8 +19,7 @@
     opacity: 0.502;
 }
 
-.sliders-bottom li:hover,
-.active-slider {
+.sliders-bottom li:hover {
     width: 19px;
     height: 19px;
     border-radius: 50%;
@@ -72,7 +71,6 @@
 }
 
 .slider-content{ 
-    font-family: "Myriad Pro";
     color:  #ffffff;
     text-align: center;
     line-height: 1.6;

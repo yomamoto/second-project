@@ -1,0 +1,231 @@
+.project::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.project:hover::before {
+    background-color: rgba(17, 17, 17, 0.7);
+}
+
+.lates-project {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.lates-project h2 {
+    font-size: 24px;
+    color: rgb(85, 85, 85);
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.lates-project-one {
+    font-size: 12px;
+    color: rgb(140, 140, 140);
+    line-height: 2.0;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.filter div {
+    font-size: 14px;
+    font-family: "Montserrat";
+    line-height: 2.0;
+    text-align: center;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.filter div:hover {
+    background-color: #998675;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    margin-top: 20px;
+}
+
+.project {
+    width: calc(100% - 20px);
+    margin: 10px;
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.project-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fbfaf8;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project:hover .project-footer {
+    background-color: #362f2d;
+}
+
+.project:hover .project-footer .project-footer-fitst {
+    color: #ffffff;
+}
+
+.project:hover .project-footer .project-footer-last {
+    color: rgb(199, 178, 153);
+}
+
+.project-footer-fitst {
+    color: rgb(199, 178, 153);
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.project-footer-last {
+    color: rgb(209, 209, 209);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.project-footer::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 15px solid #fbfaf8;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+
+.project:hover .project-footer::before {
+    border-bottom-color: #362f2d;
+}
+
+.link-lupa {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+
+.project:hover .link-lupa {
+    display: block;
+}
+
+.link-lupa img {
+    max-width: 25px;
+    margin: 10px 10px;
+}
+
+.lates-project button {
+    font-size: 10px;
+    line-height: 1.2;
+    height: 35px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+@media (min-width: 568px) {
+    .lates-project h2 {
+        font-size: 30px;
+    }
+    .lates-project-one {
+        font-size: 14px;
+        padding: 0 60px;
+    }
+    .filter div {
+        margin: 5px;
+        font-size: 16px;
+        width: calc(33.3% - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:992px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .filter div {
+        margin: 5px;
+        font-size: 15px;
+        width: auto;
+        padding: 0 20px;
+        border: 1px solid #ebebeb;
+        border-radius: 3px
+    }
+    .lates-project button {
+        font-size: 14px;
+        line-height: 1.6;
+        height: 45px;
+        width: 115px;
+        margin-top: 40px;
+    }
+    .filter {
+        margin-top: 40px;
+    }
+    .filter div:hover {
+        border: 1px solid #ffffff;
+    }
+    .lates-project-one {
+        font-size: 16px;
+        padding: 0 80px;
+    }
+    .project-footer-fitst {
+        font-size: 20px;
+    }
+    .project-footer-last {
+        font-size: 14px;
+    }
+    .lates-project {
+        padding: 30px 10px;
+        margin: 0 auto;
+    }
+    .project-footer::before {
+        border-bottom: 20px solid #fbfaf8;
+    }
+    .project:hover .project-overlay, .project:hover .project-footer {
+        background-color: rgba(17, 17, 17, 0.7);
+    }
+    .project::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+}
